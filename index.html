@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAJS Library Site - Documentation Hub</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <div class="mobile-header">
+    <div class="brand-section">
+      <img src="../assets/image.jpeg" class="brand-logo" alt="SAJS Logo">
+      <span class="brand-name">SAJS Library Docs</span>
+    </div>
+  </div>
+
+  <div class="app-container" id="app-wrapper">
+    <!-- Collapsible Sidebar Toggle Button -->
+    <button class="sidebar-toggle-btn" id="sidebar-toggle" title="Toggle Sidebar"
+      aria-label="Toggle Sidebar">&lt;</button>
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar" id="docs-sidebar">
+      <a href="#" class="brand-section">
+        <img src="../assets/image.jpeg" class="brand-logo" alt="SAJS Logo">
+        <span class="brand-name">SAJS Library Docs</span>
+      </a>
+      <nav class="nav-container">
+        <ul class="nav-menu">
+          <li class="nav-item active" id="li-introduction"><a href="#introduction">Introduction</a></li>
+          <li class="nav-item" id="li-purpose"><a href="#purpose">Purpose of the Website</a></li>
+          <li class="nav-item" id="li-languages"><a href="#languages">Languages &amp; Services</a></li>
+          <li class="nav-item" id="li-structure"><a href="#structure">Website Structure</a></li>
+          <li class="nav-item" id="li-security"><a href="#security">Security &amp; Access Control</a></li>
+          <li class="nav-item" id="li-features"><a href="#features">Key Features</a></li>
+          <li class="nav-item" id="li-improvements"><a href="#improvements">Future Improvements</a></li>
+          <li class="nav-item" id="li-conclusion"><a href="#conclusion">Conclusion</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+
+      <!-- Section: Introduction -->
+      <section id="introduction">
+        <h1>Seth Anandram Jaipuria School's Library Website</h1>
+        <p>This document provides an overview of the Seth Anandram Jaipuria School Library Website, developed by
+          Manav Kumar Mishra of Class VIII-D
+        </p>
+        <p>The website is designed to provide students, teachers, and library administrators with a centralized digital
+          platform for accessing the school library’s catalogue, schedules, discussions, book information, user
+          profiles, and other library-related resources.</p>
+        <p>The website is designed using publicly available technologies and services. The core website can be
+          created, hosted, and managed at little to no cost within the applicable free usage limits of the services
+          used.</p>
+      </section>
+
+      <!-- Section: Purpose -->
+      <section id="purpose">
+        <h2>Purpose of the Website</h2>
+        <p>The main purpose of the website is to digitize and simplify the management and use of the school library.</p>
+        <p>Instead of keeping information about books, schedules, discussions, and users in separate places, the
+          website brings these features together into a single platform.</p>
+        <p>The website aims to:</p>
+        <ul>
+          <li>Make the library catalogue easily accessible to students.</li>
+          <li>Provide detailed information about books.</li>
+          <li>Allow students to discuss books and exchange perspectives.</li>
+          <li>Make library schedules easier to access.</li>
+          <li>Provide students with customizable profiles.</li>
+          <li>Allow users to discover and learn about other registered members.</li>
+          <li>Give teachers and administrators tools to manage the library.</li>
+          <li>Provide a centralized system for moderation and record keeping.</li>
+          <li>Create a foundation that can be expanded with additional features in future versions.</li>
+        </ul>
+      </section>
+
+      <!-- Section: Languages & Services -->
+      <section id="languages">
+        <h2>Languages and Services Used</h2>
+
+        <h3>HTML, CSS and JavaScript</h3>
+        <p>The frontend of the website is built using three core web technologies:</p>
+        <ul>
+          <li><strong>HTML (HyperText Markup Language):</strong> Provides the structure and content of the website.</li>
+          <li><strong>CSS (Cascading Style Sheets):</strong> Controls the appearance, layout, responsiveness, and visual
+            design of the website.</li>
+          <li><strong>JS (JavaScript):</strong> Adds interactivity, dynamic content, data handling, and other
+            interactive functionality.</li>
+        </ul>
+        <p>Together, these development languages allow the website to remain responsive, organized, and easy to use
+          across different devices.</p>
+
+        <h3>Firebase</h3>
+        <p>Firebase, a Google platform, is used for several backend services of the website. Depending on the feature,
+          Firebase is responsible for services such as:</p>
+        <ul>
+          <li>User authentication and login.</li>
+          <li>Storage and retrieval of book information.</li>
+          <li>User profile data.</li>
+          <li>Discussions, comments, and messages.</li>
+          <li>Reviews and other library-related information.</li>
+          <li>Database operations.</li>
+          <li>Access control and management of user permissions.</li>
+        </ul>
+        <p>Firebase allows the website to use a cloud-based backend without requiring the project to maintain its own
+          physical server. The services used by the project can be operated within Firebase's applicable free usage
+          limits, making the website practical to develop and maintain without requiring a large infrastructure
+          budget.</p>
+
+        <h3>GitHub</h3>
+        <p>GitHub, a Microsoft-owned developer platform, is used for source-code management, version control, and
+          website hosting. It is responsible for:</p>
+        <ul>
+          <li>Storing and organizing the website's source code and project files.</li>
+          <li>Keeping track of changes made to the project through version control.</li>
+          <li>Providing a reliable backup of the project's files.</li>
+          <li>Hosting the website using GitHub Pages, making it possible to manage and update the website without
+            requiring a separate hosting server.</li>
+        </ul>
+      </section>
+
+      <!-- Section: Website Structure -->
+      <section id="structure">
+        <h2>Website Structure</h2>
+        <p>The website contains six main pages available to general users, along with an additional Manage page that
+          is accessible only to authorized teachers and administrators. The pages and their functions are described
+          below.</p>
+
+        <h3>1. Home</h3>
+        <p>The Home page acts as the main introduction to the library website. It provides users with quick access to
+          important sections of the website and highlights useful information such as:</p>
+        <ul>
+          <li>Introduction to the digital library.</li>
+          <li>Shortcuts to important sections.</li>
+          <li>Featured books.</li>
+          <li>Recently added books.</li>
+          <li>Other important library updates.</li>
+        </ul>
+        <p>The purpose of the Home page is to give users a quick overview of the library and allow them to reach the
+          information they need without unnecessary navigation.</p>
+
+        <h3>2. Library</h3>
+        <p>The Library page contains the digital catalogue of books available on the website. Authorized teachers and
+          administrators can add detailed information about books, including:</p>
+        <ul>
+          <li>Title, Author, and Publication year.</li>
+          <li>Genre, Themes, Characters, and Setting.</li>
+          <li>Plot, Conflicts, Resolutions, Moral or lessons, and Summary.</li>
+        </ul>
+        <p>This information is then presented to students and other authorized users in an organized format. The
+          Library page therefore acts as the central source of information about the books available in the school's
+          digital catalogue.</p>
+
+        <h3>3. Discussions</h3>
+        <p>The Discussions section allows users to communicate and exchange ideas about books they are reading.
+          Students can use discussions to share opinions, discuss characters and events, ask questions, exchange
+          interpretations, discuss themes, and gain perspectives from other readers.</p>
+        <p>A major feature of this section is automatic discussion creation. Whenever a new book is added to the
+          library, a discussion associated with that book can be created automatically. The discussion system also
+          includes word filtering to help prevent inappropriate or abusive language from being used on the platform.
+          This makes the library more interactive rather than functioning only as a catalogue of books.</p>
+
+        <h3>4. Schedule</h3>
+        <p>The Schedule page provides students with information about their weekly library periods. Authorized teachers
+          and administrators can add schedule information including Date, Day, Period, Grade, Section, Teacher, Genre
+          or shelf to read, and Additional notes.</p>
+        <p>The day can be automatically determined from the selected date, reducing the amount of information that
+          staff members need to enter manually. The schedule allows students to quickly check what is planned for
+          their library period.</p>
+        <div class="callout">
+          <strong>Planned Improvements:</strong> A future version of the website may include a Schedule History
+          feature. This would allow users to view previous library schedules instead of only the current or upcoming
+          schedule.
+        </div>
+
+        <h3>5. Discover People</h3>
+        <p>The Discover People section provides an alphabetical directory of registered users. It allows students to
+          learn more about the people they interact with on the platform while keeping the amount of publicly visible
+          information limited.</p>
+        <p>Depending on the user's profile settings and the website's access rules, information displayed may include
+          Name, Class, Section, Roll number, Bio, and Last online status. Sensitive information such as passwords and
+          authentication credentials is not displayed to other users. The purpose of this feature is to make the
+          platform more social and help users identify the people participating in library discussions.</p>
+
+        <h3>6. Dashboard</h3>
+        <p>The Dashboard is the personal profile and account management area of the website. Users can manage
+          information about their profile and customize the information they choose to share. Users can edit their
+          profile information while their unique user ID remains system-assigned and cannot be manually changed. This
+          ensures that the identifier associated with an account remains consistent even when the user's profile
+          information is updated.</p>
+
+        <h3>7. Manage</h3>
+        <p>The Manage page is a restricted management dashboard available only to authorized teachers and
+          administrators. It provides centralized tools for managing the website and its content. The management
+          dashboard includes areas such as:</p>
+        <ul>
+          <li><strong>Catalogue Management:</strong> Allows authorized staff to add, edit, and manage books in the
+            digital catalogue.</li>
+          <li><strong>Review Moderation:</strong> Provides tools for reviewing and moderating book-related reviews or
+            user-submitted content.</li>
+          <li><strong>User Management:</strong> Allows authorized staff to manage registered users and take appropriate
+            moderation or administrative actions.</li>
+        </ul>
+        <p>By bringing these functions together, the Manage page provides staff with a centralized and organized
+          method of administering the digital library.</p>
+      </section>
+
+      <!-- Section: Security -->
+      <section id="security">
+        <h2>Security and Access Control</h2>
+        <p>Since the website handles user accounts and library-related data, access control is an important part of the
+          system. Different users can have different levels of access depending on their role. For example:</p>
+        <ul>
+          <li>Students can access normal library features.</li>
+          <li>Teachers can access additional management functions where authorized.</li>
+          <li>Administrators can access the full management dashboard and administrative functions.</li>
+        </ul>
+        <p>Restricted features are not intended to be available to ordinary users. Authentication and database services
+          are handled through Firebase, while access rules can be used to control which users are allowed to read or
+          modify different types of information. The website also avoids displaying sensitive account information such
+          as passwords to other users.</p>
+      </section>
+
+      <!-- Section: Features -->
+      <section id="features">
+        <h2>Key Features</h2>
+        <p>The major features of the website can be summarized as follows:</p>
+        <ul>
+          <li>Digital library catalogue.</li>
+          <li>Detailed book information.</li>
+          <li>Book discussions and reviews.</li>
+          <li>Automatic discussion creation for newly added books.</li>
+          <li>Weekly library schedules.</li>
+          <li>User profiles.</li>
+          <li>User discovery system.</li>
+          <li>Role-based management.</li>
+          <li>Book and review management.</li>
+          <li>User management.</li>
+          <li>Audit logging.</li>
+          <li>Content moderation.</li>
+          <li>Responsive web design.</li>
+          <li>Cloud-based backend and database.</li>
+        </ul>
+        <p>These features make the website more than a simple digital book catalogue; it functions as a complete digital
+          library management and interaction platform.</p>
+      </section>
+
+      <!-- Section: Improvements -->
+      <section id="improvements">
+        <h2>Future Improvements</h2>
+        <p>The website is designed so that additional features can be introduced in future versions. Some planned or
+          possible improvements include:</p>
+        <ul>
+          <li><strong>Schedule History:</strong> Allow users to view previous library schedules.</li>
+          <li><strong>Reading Lists:</strong> Allow students to create personal lists of books they want to read.</li>
+          <li><strong>Book Recommendations:</strong> Recommend books based on a user's interests or reading history.
+          </li>
+          <li><strong>Notifications:</strong> Notify users about new books, schedule changes, or discussion activity.
+          </li>
+          <li><strong>Improved Moderation:</strong> Expand automated filtering and moderation tools.</li>
+          <li><strong>Analytics:</strong> Provide administrators with useful statistics about catalogue usage and
+            student
+            interaction.</li>
+          <li><strong>Book Availability Tracking:</strong> Track whether physical copies of books are available, issued,
+            or reserved.</li>
+          <li><strong>Mobile Improvements:</strong> Continue improving the responsive experience for phones and tablets.
+          </li>
+          <li><strong>Additional Administrative Tools:</strong> Introduce more tools for managing library operations
+            digitally.</li>
+        </ul>
+        <p>These improvements could gradually turn the website into a more comprehensive digital library management
+          system.</p>
+      </section>
+
+      <!-- Section: Conclusion -->
+      <section id="conclusion">
+        <h2>Conclusion</h2>
+        <p>The Seth Anandram Jaipuria School Library Website is designed to bring the school's library resources,
+          information, communication, and management tools together into one centralized platform.</p>
+        <p>By combining a modern web interface with cloud-based services such as Firebase, the project provides students
+          with easier access to books, schedules, discussions, and user profiles while giving
+          teachers and administrators dedicated tools for managing the platform.</p>
+        <p>The project also provides a strong foundation for future development. Features such as schedule history,
+          advanced searching, reading lists, recommendations, notifications, analytics, and physical book availability
+          can be added as the system grows.</p>
+        <p>Overall, the goal of the project is not simply to create a website for the library, but to create a digital
+          ecosystem that makes reading, discovering, discussing, and managing library resources easier and more
+          organized for the entire school community.</p>
+
+        <div class="signature-block"
+          style="margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--glass-border);">
+          <p style="margin-bottom: 4px; color: var(--text-tertiary);">Regards,</p>
+          <p style="font-weight: 600; color: var(--cyan-300); font-size: 1.05rem; margin-bottom: 2px;">Manav Kumar
+            Mishra
+          </p>
+          <p style="font-size: 0.85rem; color: var(--text-tertiary); margin: 0;">Class VIII-D</p>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Collapsible sidebar toggle script -->
+  <script>
+    const toggleBtn = document.getElementById('sidebar-toggle');
+    const appContainer = document.getElementById('app-wrapper');
+
+    toggleBtn.addEventListener('click', () => {
+      const isCollapsed = appContainer.classList.toggle('collapsed');
+      toggleBtn.textContent = isCollapsed ? '>' : '<';
+      toggleBtn.title = isCollapsed ? 'Expand Sidebar' : 'Collapse Sidebar';
+    });
+
+    // Auto sidebar highlight logic
+    const sections = document.querySelectorAll('section');
+    const navLi = document.querySelectorAll('.nav-item');
+    const mainContent = document.querySelector('.main-content');
+
+    mainContent.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (mainContent.scrollTop >= (sectionTop - 150)) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLi.forEach(li => {
+        li.classList.remove('active');
+        if (li.id === `li-${current}`) {
+          li.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
