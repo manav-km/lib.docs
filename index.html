@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SAJS Library Site - Documentation Hub</title>
+  <link rel="icon" type="image/jpeg" href="image.jpeg">
   <link rel="stylesheet" href="index.css">
 </head>
 
@@ -36,7 +37,6 @@
           <li class="nav-item" id="li-structure"><a href="#structure">Website Structure</a></li>
           <li class="nav-item" id="li-security"><a href="#security">Security &amp; Access Control</a></li>
           <li class="nav-item" id="li-features"><a href="#features">Key Features</a></li>
-          <li class="nav-item" id="li-improvements"><a href="#improvements">Future Improvements</a></li>
           <li class="nav-item" id="li-conclusion"><a href="#conclusion">Conclusion</a></li>
         </ul>
       </nav>
@@ -49,33 +49,40 @@
       <section id="introduction">
         <h1>Seth Anandram Jaipuria School's Library Website</h1>
         <p>This document provides an overview of the Seth Anandram Jaipuria School Library Website, developed by
-          Manav Kumar Mishra of Class VIII-D
+          Manav Kumar Mishra of Class VIII-D.
         </p>
-        <p>The website is designed to provide students, teachers, and library administrators with a centralized digital
-          platform for accessing the school library’s catalogue, schedules, discussions, book information, user
-          profiles, and other library-related resources.</p>
-        <p>The website is designed using publicly available technologies and services. The core website can be
-          created, hosted, and managed at little to no cost within the applicable free usage limits of the services
-          used.</p>
+        <p>The website is a fully-featured, production-ready digital library ecosystem designed for students, teachers,
+          and library administrators. It provides centralized access to the school library's catalogue, book details,
+          reading progress tracking, achievements, leaderboards, physical book issuing, custom shelves, reading
+          challenges, teacher management portals, and community discussions.</p>
+        <p>The website is built using modern web standards and public cloud services, allowing full platform operations,
+          hosting, and backend data persistence within free usage tiers.</p>
       </section>
 
       <!-- Section: Purpose -->
       <section id="purpose">
         <h2>Purpose of the Website</h2>
-        <p>The main purpose of the website is to digitize and simplify the management and use of the school library.</p>
-        <p>Instead of keeping information about books, schedules, discussions, and users in separate places, the
-          website brings these features together into a single platform.</p>
-        <p>The website aims to:</p>
+        <p>The primary goal of the platform is to fully digitize, streamline, and gamify the school library experience
+          for the entire student body and staff community.</p>
+        <p>Instead of maintaining physical registers or fragmented records, the platform integrates catalogue browsing,
+          reading progress, achievement rewards, and administrative oversight into a cohesive web application.</p>
+        <p>The website accomplishes the following:</p>
         <ul>
-          <li>Make the library catalogue easily accessible to students.</li>
-          <li>Provide detailed information about books.</li>
-          <li>Allow students to discuss books and exchange perspectives.</li>
-          <li>Make library schedules easier to access.</li>
-          <li>Provide students with customizable profiles.</li>
-          <li>Allow users to discover and learn about other registered members.</li>
-          <li>Give teachers and administrators tools to manage the library.</li>
-          <li>Provide a centralized system for moderation and record keeping.</li>
-          <li>Create a foundation that can be expanded with additional features in future versions.</li>
+          <li>Provides instant, searchable access to the digital book catalogue with full book metadata.</li>
+          <li>Enables students to request physical book issues with automated return notices and fine policy
+            disclaimers.</li>
+          <li>Tracks student reading progress page-by-page with interactive completion status bars.</li>
+          <li>Gamifies student reading through 16 unlockable achievements, live stat evaluations, and toast
+            notifications.</li>
+          <li>Offers a 4-tab competitive Leaderboard for student engagement while strictly excluding staff to ensure
+            fair play.</li>
+          <li>Enables personal reading list management with default shelves (Want to Read, Currently Reading, Favorites)
+            and custom user shelves.</li>
+          <li>Fosters academic discussions via automated book-associated chatrooms with bad-word content filtering.</li>
+          <li>Provides a dedicated Teacher & Admin Dashboard for book issue approvals, reading challenge creation,
+            student activity tracking, and announcements.</li>
+          <li>Enforces strict Security Enhancements including 72-hour email verification windows and instant
+            multi-account switching.</li>
         </ul>
       </section>
 
@@ -83,221 +90,172 @@
       <section id="languages">
         <h2>Languages and Services Used</h2>
 
-        <h3>HTML, CSS and JavaScript</h3>
-        <p>The frontend of the website is built using three core web technologies:</p>
+        <h3>HTML5, CSS3 and Modern ES6+ JavaScript</h3>
+        <p>The frontend is built using pure, highly optimized web standards:</p>
         <ul>
-          <li><strong>HTML (HyperText Markup Language):</strong> Provides the structure and content of the website.</li>
-          <li><strong>CSS (Cascading Style Sheets):</strong> Controls the appearance, layout, responsiveness, and visual
-            design of the website.</li>
-          <li><strong>JS (JavaScript):</strong> Adds interactivity, dynamic content, data handling, and other
-            interactive functionality.</li>
+          <li><strong>HTML5:</strong> Semantic structure, accessible forms, modal dialogs, and dynamic page layouts.
+          </li>
+          <li><strong>Vanilla CSS3:</strong> Custom glassmorphic visual system, vibrant color tokens, responsive grid
+            layouts, animations, and dark mode aesthetics.</li>
+          <li><strong>ES6+ JavaScript (Modules):</strong> Asynchronous API calls, real-time achievement evaluation,
+            client-side image compression, and dynamic DOM rendering.</li>
         </ul>
-        <p>Together, these development languages allow the website to remain responsive, organized, and easy to use
-          across different devices.</p>
 
-        <h3>Firebase</h3>
-        <p>Firebase, a Google platform, is used for several backend services of the website. Depending on the feature,
-          Firebase is responsible for services such as:</p>
+        <h3>Firebase (Google Cloud Platform)</h3>
+        <p>Firebase powers the backend infrastructure without requiring physical server maintenance:</p>
         <ul>
-          <li>User authentication and login.</li>
-          <li>Storage and retrieval of book information.</li>
-          <li>User profile data.</li>
-          <li>Discussions, comments, and messages.</li>
-          <li>Reviews and other library-related information.</li>
-          <li>Database operations.</li>
-          <li>Access control and management of user permissions.</li>
+          <li><strong>Firebase Authentication:</strong> User registration, login, 72-hour email verification gates, and
+            Google OAuth single sign-on.</li>
+          <li><strong>Cloud Firestore:</strong> NoSQL database storing user profiles, book catalogues, reviews, reading
+            progress, shelves, reading challenges, book issues, and announcements.</li>
+          <li><strong>Firebase Realtime Database:</strong> High-speed WebSocket messaging for discussion chatrooms and
+            custom community threads.</li>
+          <li><strong>Firebase Storage:</strong> Storage for compressed cover images, avatars, and direct PDF downloads
+            (up to 100MB per file).</li>
+          <li><strong>Security Rules:</strong> Fine-grained data access rules (`firestore.rules` and
+            `database.rules.json`) enforcing role-based permissions and self-deletion rights for expired accounts.</li>
         </ul>
-        <p>Firebase allows the website to use a cloud-based backend without requiring the project to maintain its own
-          physical server. The services used by the project can be operated within Firebase's applicable free usage
-          limits, making the website practical to develop and maintain without requiring a large infrastructure
-          budget.</p>
 
-        <h3>GitHub</h3>
-        <p>GitHub, a Microsoft-owned developer platform, is used for source-code management, version control, and
-          website hosting. It is responsible for:</p>
-        <ul>
-          <li>Storing and organizing the website's source code and project files.</li>
-          <li>Keeping track of changes made to the project through version control.</li>
-          <li>Providing a reliable backup of the project's files.</li>
-          <li>Hosting the website using GitHub Pages, making it possible to manage and update the website without
-            requiring a separate hosting server.</li>
-        </ul>
+        <h3>GitHub &amp; GitHub Pages</h3>
+        <p>GitHub manages project source code, version history, and automated web deployment via GitHub Pages.</p>
       </section>
 
       <!-- Section: Website Structure -->
       <section id="structure">
-        <h2>Website Structure</h2>
-        <p>The website contains six main pages available to general users, along with an additional Manage page that
-          is accessible only to authorized teachers and administrators. The pages and their functions are described
-          below.</p>
+        <h2>Website Structure &amp; Page Modules</h2>
+        <p>The application consists of specialized pages tailored for students, teachers, and administrators.</p>
 
-        <h3>1. Home</h3>
-        <p>The Home page acts as the main introduction to the library website. It provides users with quick access to
-          important sections of the website and highlights useful information such as:</p>
-        <ul>
-          <li>Introduction to the digital library.</li>
-          <li>Shortcuts to important sections.</li>
-          <li>Featured books.</li>
-          <li>Recently added books.</li>
-          <li>Other important library updates.</li>
-        </ul>
-        <p>The purpose of the Home page is to give users a quick overview of the library and allow them to reach the
-          information they need without unnecessary navigation.</p>
+        <h3>1. Home (`index.html`)</h3>
+        <p>The portal landing page featuring quick navigation, featured book collections, recently added titles, library
+          announcements, and platform stats.</p>
 
-        <h3>2. Library</h3>
-        <p>The Library page contains the digital catalogue of books available on the website. Authorized teachers and
-          administrators can add detailed information about books, including:</p>
-        <ul>
-          <li>Title, Author, and Publication year.</li>
-          <li>Genre, Themes, Characters, and Setting.</li>
-          <li>Plot, Conflicts, Resolutions, Moral or lessons, and Summary.</li>
-        </ul>
-        <p>This information is then presented to students and other authorized users in an organized format. The
-          Library page therefore acts as the central source of information about the books available in the school's
-          digital catalogue.</p>
+        <h3>2. Library Catalogue (`library.html`)</h3>
+        <p>The main library catalogue supporting real-time genre filtering, title/author search, mandatory `totalPages`
+          indicators, cover image displays, and book creation modals for staff.</p>
 
-        <h3>3. Discussions</h3>
-        <p>The Discussions section allows users to communicate and exchange ideas about books they are reading.
-          Students can use discussions to share opinions, discuss characters and events, ask questions, exchange
-          interpretations, discuss themes, and gain perspectives from other readers.</p>
-        <p>A major feature of this section is automatic discussion creation. Whenever a new book is added to the
-          library, a discussion associated with that book can be created automatically. The discussion system also
-          includes word filtering to help prevent inappropriate or abusive language from being used on the platform.
-          This makes the library more interactive rather than functioning only as a catalogue of books.</p>
+        <h3>3. Book Details (`book-details.html`)</h3>
+        <p>A comprehensive detail view for every book. Includes plot summaries, character lists, setting details,
+          themes, star ratings, review submission, direct PDF downloads, an interactive **Reading Progress Tracker**, a
+          **"📋 Issue Book"** request button, an **"Add to Shelf"** manager, and personalized genre recommendations.</p>
 
-        <h3>4. Schedule</h3>
-        <p>The Schedule page provides students with information about their weekly library periods. Authorized teachers
-          and administrators can add schedule information including Date, Day, Period, Grade, Section, Teacher, Genre
-          or shelf to read, and Additional notes.</p>
-        <p>The day can be automatically determined from the selected date, reducing the amount of information that
-          staff members need to enter manually. The schedule allows students to quickly check what is planned for
-          their library period.</p>
-        <div class="callout">
-          <strong>Planned Improvements:</strong> A future version of the website may include a Schedule History
-          feature. This would allow users to view previous library schedules instead of only the current or upcoming
-          schedule.
-        </div>
+        <h3>4. Student Dashboard (`student-dashboard.html`)</h3>
+        <p>The personal hub for students. Displays reading stats (total pages read, finished books, reviews written), an
+          interactive **"My Shelves"** widget, active **Reading Challenges**, a **Recently Viewed Books** carousel
+          synced across devices, and a 16-badge **Achievements Grid** highlighting unlocked rewards.</p>
 
-        <h3>5. Discover People</h3>
-        <p>The Discover People section provides an alphabetical directory of registered users. It allows students to
-          learn more about the people they interact with on the platform while keeping the amount of publicly visible
-          information limited.</p>
-        <p>Depending on the user's profile settings and the website's access rules, information displayed may include
-          Name, Class, Section, Roll number, Bio, and Last online status. Sensitive information such as passwords and
-          authentication credentials is not displayed to other users. The purpose of this feature is to make the
-          platform more social and help users identify the people participating in library discussions.</p>
+        <h3>5. Teacher &amp; Admin Dashboard (`teacher-dashboard.html`)</h3>
+        <p>A role-gated management portal reserved for staff (`role: teacher` or `admin`). Contains 5 tabs: Overview,
+          Reading Challenges Manager, Book Issue Approvals, Student Activity Tracker, and System Announcements.</p>
 
-        <h3>6. Dashboard</h3>
-        <p>The Dashboard is the personal profile and account management area of the website. Users can manage
-          information about their profile and customize the information they choose to share. Users can edit their
-          profile information while their unique user ID remains system-assigned and cannot be manually changed. This
-          ensures that the identifier associated with an account remains consistent even when the user's profile
-          information is updated.</p>
+        <h3>6. Leaderboard (`leaderboard.html`)</h3>
+        <p>A 4-tab competitive showcase: Top Reviewers, Most Achievements, Most Books Read (ranking readers by finished
+          books and pages), and Highest Rated Books. Staff accounts are automatically filtered out to focus competition
+          on students.</p>
 
-        <h3>7. Manage</h3>
-        <p>The Manage page is a restricted management dashboard available only to authorized teachers and
-          administrators. It provides centralized tools for managing the website and its content. The management
-          dashboard includes areas such as:</p>
-        <ul>
-          <li><strong>Catalogue Management:</strong> Allows authorized staff to add, edit, and manage books in the
-            digital catalogue.</li>
-          <li><strong>Review Moderation:</strong> Provides tools for reviewing and moderating book-related reviews or
-            user-submitted content.</li>
-          <li><strong>User Management:</strong> Allows authorized staff to manage registered users and take appropriate
-            moderation or administrative actions.</li>
-        </ul>
-        <p>By bringing these functions together, the Manage page provides staff with a centralized and organized
-          method of administering the digital library.</p>
+        <h3>7. Schedule (`schedule.html`)</h3>
+        <p>A 6-Day x 8-Period Weekly Timetable portal. Allows students and staff to view the active weekly schedule
+          across 8 periods (Period 1–8) and 6 days (Monday–Saturday) with class filters. Supports regular class periods,
+          🏖️ Holiday designations, and 🔄 Substitution coverage. Features click-to-edit for staff, automatic Sunday
+          week rollovers, and a <strong>"📜 View Past Schedules"</strong> popup modal displaying historic weekly
+          planners grouped by week range. All creation, edit, and deletion actions are recorded in the system Audit Log
+          under the <code>Schedule</code> category.</p>
+
+        <h3>8. Discussions (`discussions.html`)</h3>
+        <p>Interactive community hub featuring book-specific chatrooms and user-created custom threads. Powered by
+          Realtime Database with automated bad-word filtering.</p>
+
+        <h3>9. Discover People (`discover.html`)</h3>
+        <p>A student directory displaying member profiles, favorite genres, reading activity, and online status while
+          keeping passwords and private data hidden.</p>
+
+        <h3>10. Management Panel (`manage.html`)</h3>
+        <p>Centralized administrative panel containing Catalogue CRUD, Issue Status columns (`Not Issued`, `Requested`,
+          `Issued`), Review Moderation, Student Role Management, Analytics Charts, and Audit Logs with color-coded
+          category badges.</p>
+
+        <h3>11. Email Verification Gate (`verify-email.html`)</h3>
+        <p>A security gate displaying a live **72-hour countdown timer** and resend options for newly registered
+          unverified password accounts.</p>
       </section>
 
       <!-- Section: Security -->
       <section id="security">
-        <h2>Security and Access Control</h2>
-        <p>Since the website handles user accounts and library-related data, access control is an important part of the
-          system. Different users can have different levels of access depending on their role. For example:</p>
+        <h2>Security &amp; Access Control</h2>
+
+        <h3>1. Role-Based Access Control (RBAC)</h3>
+        <p>Strict role gating enforces user separation:</p>
         <ul>
-          <li>Students can access normal library features.</li>
-          <li>Teachers can access additional management functions where authorized.</li>
-          <li>Administrators can access the full management dashboard and administrative functions.</li>
+          <li><strong>Students:</strong> Access library browsing, review submission, progress tracking, book issues,
+            shelves, achievements, schedules, and student dashboards. Staff pages automatically redirect students to
+            their dashboard.</li>
+          <li><strong>Teachers &amp; Admins:</strong> Access book management, review moderation, issue approvals,
+            challenge management, timetable slot editing, student oversight, and audit logs.</li>
         </ul>
-        <p>Restricted features are not intended to be available to ordinary users. Authentication and database services
-          are handled through Firebase, while access rules can be used to control which users are allowed to read or
-          modify different types of information. The website also avoids displaying sensitive account information such
-          as passwords to other users.</p>
+
+        <h3>2. Enforced 72-Hour Email Verification Gate</h3>
+        <p>To enhance security and prevent spam or fake email signups, newly created password accounts must verify their
+          email address within 72 hours of registration. If an account remains unverified after 72 hours, the system
+          automatically purges both the Firestore user document and the Firebase Auth account.</p>
+
+        <h3>3. Instant 1-Click Multi-Account Switcher</h3>
+        <p>Users can sign into multiple accounts on a single device. The profile dropdown menu features a **"🔄 Switch
+          account"** option placed directly above "Sign out". Clicking **Switch** on any saved account switches sessions
+          instantly in the background without needing password re-entry or login redirects.</p>
+
+        <h3>4. Client-Side Image Compression</h3>
+        <p>Cover images and avatars are automatically compressed down to 600px max dimension (~30-50KB) before uploading
+          to Cloud Storage, preventing network hangs and ensuring document sizes stay well below Firestore's 1MB limit.
+        </p>
       </section>
 
       <!-- Section: Features -->
       <section id="features">
-        <h2>Key Features</h2>
-        <p>The major features of the website can be summarized as follows:</p>
+        <h2>Key Implemented Features</h2>
+        <p>All core and advanced library features have been fully built and deployed:</p>
         <ul>
-          <li>Digital library catalogue.</li>
-          <li>Detailed book information.</li>
-          <li>Book discussions and reviews.</li>
-          <li>Automatic discussion creation for newly added books.</li>
-          <li>Weekly library schedules.</li>
-          <li>User profiles.</li>
-          <li>User discovery system.</li>
-          <li>Role-based management.</li>
-          <li>Book and review management.</li>
-          <li>User management.</li>
-          <li>Audit logging.</li>
-          <li>Content moderation.</li>
-          <li>Responsive web design.</li>
-          <li>Cloud-based backend and database.</li>
+          <li><strong>Digital Book Catalogue:</strong> Full book metadata, SAJS-### auto-numbering, genre filters, and
+            PDF attachment links.</li>
+          <li><strong>6x8 Weekly Timetable System:</strong> 6 Days x 8 Periods timetable grid with regular, 🏖️ Holiday,
+            and 🔄 Substitution status badges, click-to-edit, auto-day calculation, automatic Sunday clearing, and a
+            "View Past Schedules" historic planners popup modal.</li>
+          <li><strong>Book Issue System:</strong> Request modal with overdue fine warnings, staff approval/rejection
+            queue, and live Catalogue status column (`Not Issued`, `Requested`, `Issued`).</li>
+          <li><strong>Interactive Reading Tracker:</strong> Page-by-page progress bars, mandatory `totalPages` field,
+            and completion badges (`Not Started`, `Reading`, `Finished ✓`).</li>
+          <li><strong>Reading Lists &amp; Custom Shelves:</strong> Default shelves (Want to Read, Currently Reading,
+            Favorites) and user-created custom shelves.</li>
+          <li><strong>16-Badge Achievement System:</strong> Live stat evaluation, real-time toast unlock popups, and
+            student profile badges.</li>
+          <li><strong>Student-Only Leaderboards:</strong> 4 rankings tabs excluding staff for fair student competition.
+          </li>
+          <li><strong>Teacher Management Portal:</strong> Dedicated dashboard for issue approvals, reading challenges,
+            student activity, and announcements.</li>
+          <li><strong>Instant Multi-Account Switcher:</strong> Device account registry with 1-click passwordless session
+            switching.</li>
+          <li><strong>72-Hour Security Verification Gate:</strong> Mandatory email verification with live countdown
+            timer and automated 72h account purge.</li>
+          <li><strong>Community Discussions:</strong> Automated book threads with bad-word filtering and own-message
+            alignment.</li>
+          <li><strong>Audit Logging System:</strong> Full administrative audit logging with unified color-coded category
+            badges (`Schedule`, `Book Issues`, `Announcements`, `Reviews`, `Users`, `Profile`, `Discussions`, `Reading
+            Progress`).</li>
         </ul>
-        <p>These features make the website more than a simple digital book catalogue; it functions as a complete digital
-          library management and interaction platform.</p>
-      </section>
-
-      <!-- Section: Improvements -->
-      <section id="improvements">
-        <h2>Future Improvements</h2>
-        <p>The website is designed so that additional features can be introduced in future versions. Some planned or
-          possible improvements include:</p>
-        <ul>
-          <li><strong>Schedule History:</strong> Allow users to view previous library schedules.</li>
-          <li><strong>Reading Lists:</strong> Allow students to create personal lists of books they want to read.</li>
-          <li><strong>Book Recommendations:</strong> Recommend books based on a user's interests or reading history.
-          </li>
-          <li><strong>Notifications:</strong> Notify users about new books, schedule changes, or discussion activity.
-          </li>
-          <li><strong>Improved Moderation:</strong> Expand automated filtering and moderation tools.</li>
-          <li><strong>Analytics:</strong> Provide administrators with useful statistics about catalogue usage and
-            student
-            interaction.</li>
-          <li><strong>Book Availability Tracking:</strong> Track whether physical copies of books are available, issued,
-            or reserved.</li>
-          <li><strong>Mobile Improvements:</strong> Continue improving the responsive experience for phones and tablets.
-          </li>
-          <li><strong>Additional Administrative Tools:</strong> Introduce more tools for managing library operations
-            digitally.</li>
-        </ul>
-        <p>These improvements could gradually turn the website into a more comprehensive digital library management
-          system.</p>
       </section>
 
       <!-- Section: Conclusion -->
       <section id="conclusion">
         <h2>Conclusion</h2>
-        <p>The Seth Anandram Jaipuria School Library Website is designed to bring the school's library resources,
-          information, communication, and management tools together into one centralized platform.</p>
-        <p>By combining a modern web interface with cloud-based services such as Firebase, the project provides students
-          with easier access to books, schedules, discussions, and user profiles while giving
-          teachers and administrators dedicated tools for managing the platform.</p>
-        <p>The project also provides a strong foundation for future development. Features such as schedule history,
-          advanced searching, reading lists, recommendations, notifications, analytics, and physical book availability
-          can be added as the system grows.</p>
-        <p>Overall, the goal of the project is not simply to create a website for the library, but to create a digital
-          ecosystem that makes reading, discovering, discussing, and managing library resources easier and more
-          organized for the entire school community.</p>
+        <p>The Seth Anandram Jaipuria School Library Website stands as a complete, modern, and secure digital library
+          ecosystem.</p>
+        <p>By integrating modern web technology with Firebase cloud infrastructure, the platform provides students with
+          an engaging, gamified reading environment while equipping teachers and administrators with robust management,
+          moderation, and auditing tools.</p>
 
         <div class="signature-block"
           style="margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--glass-border);">
           <p style="margin-bottom: 4px; color: var(--text-tertiary);">Regards,</p>
           <p style="font-weight: 600; color: var(--cyan-300); font-size: 1.05rem; margin-bottom: 2px;">Manav Kumar
-            Mishra
-          </p>
+            Mishra</p>
           <p style="font-size: 0.85rem; color: var(--text-tertiary); margin: 0;">Class VIII-D</p>
         </div>
       </section>
@@ -318,14 +276,13 @@
 
     // Auto sidebar highlight logic
     const sections = document.querySelectorAll('section');
-    const navLi = document.querySelectorAll('.nav-item');
+    const navLi = document.querySelectorAll('.nav-menu .nav-item');
     const mainContent = document.querySelector('.main-content');
 
     mainContent.addEventListener('scroll', () => {
       let current = '';
       sections.forEach(section => {
         const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
         if (mainContent.scrollTop >= (sectionTop - 150)) {
           current = section.getAttribute('id');
         }
